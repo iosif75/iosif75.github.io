@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="icon" href="img/icon.png">
+    	<link rel="stylesheet" href="style.css">
+    	<script src="functions.js"></script> 
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <meta charset="utf-8"/>
+        <title>
+        	Marie Curie
+        </title>
+        <meta name="viewport" content="width=device-width"/>
+    </head>
+    <body>   		
+    	<div class="topbar">
+			<a href="index.html"><img src="img/icon_2.png" width="18" height="18" alt="Logo"></a>
+			<a href="index.html">Introducció</a>
+   			<a href="biografia.html">Biografia</a>
+   			<a href="#obra">Obra</a>
+   			<a href="galeria.html">Galeria</a>
+	   	</div>
+	   	<div class="parallax">
+	   		<div class="caption">
+	   			<span class="border">MARIE CURIE</span>
+	   		</div>
+	   	</div>
+		<hr>
+		<div id="obra">
+			<div class="tabcontent">
+				<div>
+					<h1><span>Obra</span></h1>
+				</div>
+				<ul class="list">
+					<li>La contribució principal i més coneguda de Marie Curie es el descobriment de la radioactivitat. </li>
+					<li>Va començar estudiant la uraninita, la qual era molt mes radioactiva que l'urani.</li>
+				</ul>
+				<img src="img/obra.jpg">
+		        <ul class="list">
+					<li>Va descobrir dos elements:</li>
+				</ul>
+				<!-- FALTA AFEGIR JAVASCRIPT-->
+	   			<button class="tablink" onclick="openTab('poloni',this,'#f77987')" id="defaultOpen">Poloni</button>
+	   			<button class="tablink" onclick="openTab('radi',this,'#F0985D')">Radi</button>
+			   	<div id="poloni" class="tabopen">
+			   		<h1>Poloni</h1>
+			   		<p>
+			   			Descobert per Marie Curie i Pierre Curie en 1898, el primer element radioactiu trobat per la parella fou nombrat en honor a la terra natal de la cientifica, Polonia. Això fou degut al fet de que en aquell moment Polonia fou partida entre Russia, Prussia i l'imperi Austro-hungar i la cientifica esperava que al nombrar-lo en honor a la seva terra li donaria més notorietat.
+			   			<br>
+			   			<br>
+			   			El poloni va ser descobert per error mentres la parella investigava la radioactivitat de la uraninita. Van descobrir que quan treien l'urani i el tori de la uraninita, la resta de materials restants era més radioactiva que abans. Degut a això, van ser capaços de separar i analitzar el poloni. 
+			   			<br>
+			   			<br>
+			   			Posteriorment, l'element es va utilitzar en el Projecte Manhattan per a desenvolupar la bomba atomica. El poloni va ser utilitzat per a desenvolupar el sistema d'inici de la reacció nuclear en cadena que faria detonar la bomba. Va decidir que s'utilitzaria perque l'element era molt menys propens a fallar a l'hora d'iniciar la reacció. Després de la segona guerra mundial, molta informació sobre el poloni va estar classificada al public fins els anys seixanta. 
+			   		</p>
+			   	</div>
+			   	<div id="radi" class="tabopen">
+			   		<h1>Radi</h1>
+			   		<p>
+			   			Cinc mesos despres de descobrir el poloni, a finals de 1989, la parella va descobrir el radi. Tot hi que ja es sabia que el Radi era altament radiactiu, en un principi el Radi va ser utilitzat per a fer pintura que il·luminés en la foscor per a rellotges, avions i panels nuclears. Fins i tot per a fer maquillatge per a dones. Per sort, progressivament aquestes practiques van anar desapareixent fins que van acabar definitivament als anys seixanta, quan l'ultima patent de pintura que utilitzava Radi va ser prohibida als Estats Units.
+			   			<br>
+			   			<br>
+			   			També es va descobrir que el radi pot produir radó, un gas radiactiu que durant un curt temps es va utilitzar per a fer tractaments contra el cancer entre els anys vint i trenta, però es va prohibir ja que aquest tractament produia anèmia i mutacions genetiques en els seus pacients. Afortunadament es van trobar tecniques més segures per utilitzar Radi minimitzant els efectes secundaris, aquestes practiques funcionen utilitzant isotops derivats del Radi que eliminen el cancer molt més efectivament que abans.
+			   		</p>
+			   	</div>
+			</div>
+		</div>
+		<div class="footer">
+			<a target="_blank" href="https://www.uvic.cat/">Uvic</a>
+			<a target="_blank" href="https://www.uvic.cat/grau/multimedia-aplicacions-i-videojocs">Multimèdia. Aplicacions i Videojocs</a>
+			<p>Iosif Baisan</p>
+		</div>
+		<script>
+			document.getElementById("defaultOpen").click();
+		</script>
+    </body>
+</html>

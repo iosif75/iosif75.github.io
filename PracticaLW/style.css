@@ -1,0 +1,241 @@
+
+html{
+	min-height:100%;
+	width:100%;
+	scroll-behavior:smooth;
+}
+body{
+	width:inherit;
+	min-height:inherit;
+	margin:0;
+	font-family: "Montserrat",sans-serif;
+	line-height: 1.6;
+}
+
+.topbar{
+	z-index:2;
+	background-color: #F0985D;
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	width:100%;
+	animation:topdown ease-out 2s;
+}
+
+.topbar a{
+	float:left;
+	color:white;
+	text-align:center;
+	padding:16px 16px;
+	text-decoration:none;
+	font-size:20px;
+}
+
+.topbar a:hover{
+	background-color: #c58c65;
+	color:white;
+}
+
+@keyframes topdown{
+	0%{
+		top:-50px;
+	}
+	100%{
+		top:0px;
+	}
+}
+
+.parallax{
+	margin:0px;
+	background: url("img/mariecurie.png");
+	height:800px;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	animation: fade ease 4s;
+}
+
+.caption{
+	position:absolute;
+	left:0;
+	top:400px;
+	width:100%;
+	text-align:center;
+	color:#000;
+}
+
+.caption span.border{
+	background-color: #111;
+	color:#fff;
+	padding:20px;
+	font-size:25px;
+	letter-spacing:12px;
+}
+
+@keyframes fade{
+	0% {
+		opacity:0.2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.tabcontent{
+	margin-right:100px;
+	margin-left:100px;
+	color:white;
+	padding:50px;
+	text-align:justify;
+}
+
+.tabcontent h1{
+	text-align:center;
+}
+.tabcontent h1 span{
+	padding-left:20px;
+	padding-right:20px;
+	background-color:#666666;
+}
+
+.tabcontent p,h2{padding:20px;}
+
+.tabcontent img{
+	display:block;
+	max-width:100%;
+	height:auto;
+	width:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.list{
+	border-left:5px solid #F0985D;
+	list-style-type:none;
+	padding:10px 20px;
+	background-color: rgba(68,68,68,0.2);
+}
+
+.list li{
+	padding:20px;
+}
+
+.expandir{
+	border-bottom: 1px; 
+	line-height: 0.1em;
+	margin: 10px 0 20px; 
+	color: white;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+}
+
+.expandir span{
+	font-size: 20px;	
+	font-family: "Montserrat",sans-serif;
+    background:#7988f7; 
+    padding:0 10px;
+}
+
+.textexpandir{
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s ease-out;;
+}
+
+.tablink{
+	font-family:"Montserrat";
+	background-color: #555;
+	color:white;
+	float:left;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	padding:20px;
+	font-size:20px;
+	width:50%;
+}
+
+.tablink:hover {
+	background-color: #777;
+}
+
+.tabopen{
+	color:white;
+	padding:50px;
+	text-align:justify;
+}
+
+.tabopen h1{
+	padding-top:50px;
+	text-align:center;
+}
+
+.imgallery{
+	max-width:600px;
+	position:relative;
+	margin:auto;
+}
+
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -25px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+  right:0;
+  border-radius: 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.slide, .slide2 {
+  display: none;
+}
+
+.footer{
+	color:white;
+	font-size:16px;
+	background-color:#976b4c;
+	padding-top:15px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.footer a:link,a:visited{
+	color:white;
+	text-decoration:underline;
+}
+
+.footer a:hover,a:active{
+	color:rgb(68,68,68);
+}
+
+hr{
+	margin:0;
+	border:6px solid #666666;
+}
+
+#introduccio{background-color:#7988f7;}
+#biografia{background-color:#7988f7;}
+#obra{background-color:#7988f7;}
+#galeria{background-color:#7988f7;}
+#poloni{background-color:#f77987;}
+#radi{background-color:#F0985D;}
